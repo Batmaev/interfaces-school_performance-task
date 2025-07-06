@@ -622,3 +622,11 @@ html, body {
     right: 0;
     z-index: 2;
 }
+
+.react-loaded #app {
+    position: static;
+}
+
+.react-loaded #static-app {
+    display: none;
+}
