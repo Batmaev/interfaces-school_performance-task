@@ -5,12 +5,27 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Яндекс.Дом</title>
+
     <link rel="preload" as="font" href="assets/lato.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="image" href="assets/logo.svg">
+    <link rel="preload" as="image" href="assets/bg@2x.png">
+    <link rel="preload" as="image" href="assets/cloud-drizzle.svg">
+    <link rel="preload" as="image" href="assets/icon_temperature.svg">
+    <link rel="preload" as="image" href="assets/icon_temperature_2.svg">
+    <link rel="preload" as="image" href="assets/icon_sun.svg">
+    <link rel="preload" as="image" href="assets/icon_sun_2.svg">
+    <link rel="preload" as="image" href="assets/icon_scheduled.svg">
+    <link rel="preload" as="image" href="assets/arrow-down.svg">
+    <link rel="preload" as="image" href="assets/arrow-left.png">
+    <link rel="preload" as="image" href="assets/icon_list_m@1x.svg">
+
+
+
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
     <script src="vendors/react-with-dom.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="reset.css" defer>
-    <!-- <link rel="stylesheet" type="text/css" href="vendors/bootstrap.css" defer> -->
-    <link rel="stylesheet" type="text/css" href="styles.css" defer>
-    <link rel="preload" as="image" href="assets/bg@2x.png" type="image/png" crossorigin="anonymous" fetchpriority="high">
+    <script src="vendors/babel.min.js" defer></script>
 </head>
 <body>
 
@@ -37,7 +52,6 @@
     </div>
 </footer>
 
-<script src="vendors/babel.min.js" defer></script>
 <script type="text/babel">
     function Header() {
         let [expanded, setExpanded] = React.useState(false);
