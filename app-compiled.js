@@ -25,8 +25,8 @@ if (document.readyState === 'loading') {
 }
 
 function Header() {
-    const [expanded, setExpanded] = React.useState(false);
-    const [toggled, setToggled] = React.useState(false);
+    let [expanded, setExpanded] = React.useState(false);
+    let [toggled, setToggled] = React.useState(false);
 
     const onClick = () => {
         if (!toggled) {
@@ -205,7 +205,7 @@ const TABS = {
 };
 
 
-for (let i = 0; i < 2; ++i) {
+for (let i = 0; i < 6; ++i) {
     TABS.all.items = [...TABS.all.items, ...TABS.all.items];
 }
 
