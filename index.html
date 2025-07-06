@@ -617,7 +617,9 @@
                 </>
             );
 
-            document.body.classList.add('react-loaded');
+            setTimeout(() => {
+                document.body.classList.add('react-loaded');
+            }, 100);
 
         } else {
             // Если скрипты еще не загружены, повторим попытку через небольшую задержку
