@@ -17,7 +17,7 @@ html, body {
 }
 
 /* Класс для скрытия статического контента после загрузки React */
-.react-loaded #app > * {
+.react-loaded #app > .static-content {
     display: none;
 }
 
