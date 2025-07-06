@@ -16,6 +16,11 @@ html, body {
     height: 100%;
 }
 
+/* Класс для скрытия статического контента после загрузки React */
+.react-loaded #app > * {
+    display: none;
+}
+
 .a11y-hidden {
     position: absolute;
     left: auto;
